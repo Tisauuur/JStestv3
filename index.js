@@ -21,3 +21,8 @@ function divide(...nums) {
     return nums.reduce((total, num) => total / num);
 };
 
+function operate(op, nOne, nTwo) {
+    return op(nOne, nTwo);
+}
+
+console.log(operate(add, 4, 4));
